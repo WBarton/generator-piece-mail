@@ -1,0 +1,27 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional //EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+    <head>
+      <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <title><%= appname %></title>
+      <style type="text/css">
+          _include('./style.css')
+      </style>
+
+   </head>
+<body>
+
+_include('./pieces/pre-header.html')
+
+_include('./pieces/header.html')
+
+<% rows.forEach(function(r,i) { %>
+    _include('./pieces/r<%= i + 1 %>-<%= r %>.html')
+<% }); %>
+
+_include('./pieces/footer.html')
+
+_include('./pieces/post-footer.html')
+
+</body>
+</html>

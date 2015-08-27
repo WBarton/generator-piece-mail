@@ -1,0 +1,86 @@
+<!-- 2-thirds-right -->
+<table width="100%" bgcolor="{{bg-colour}}" cellpadding="0" cellspacing="0" border="0" style="table-layout: fixed;">
+<tbody>
+<tr>
+<td align="center">
+
+<!-- use img class: img-200 -->
+<table width="600" bgcolor="{{body-colour}}" cellpadding="0" cellspacing="0" border="0" align="center" class="width" style="table-layout: fixed;">
+<tbody>
+<tr>
+<td align="center">
+<table width="560" bgcolor="{{body-colour}}" cellpadding="0" cellspacing="0" border="0" align="center" class="width" style="table-layout: fixed;">
+<tbody>
+<tr>
+<td align="center">
+    <!-- left column -->
+    <table width="200" align="left" border="0" cellpadding="0" cellspacing="0" class="width">
+        <tbody>
+            <tr>
+                <td>
+                    <table align="center" border="0" cellpadding="0" cellspacing="0" class="inner">
+                        <tbody>
+                            <tr>
+                                <td align="center">
+                                    <img src="http://placehold.it/200x200" class="img-200" alt="" border="0" width="200" height="" style="display:block; border:none; outline:none; text-decoration:none;">
+                                </td>
+                            </tr>
+                            _include('./spacing.html', { "amount": "10" })
+                        </tbody>
+                    </table>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <!-- /left column -->
+
+    <!-- right column -->
+    <table width="340" align="right" border="0" cellpadding="0" cellspacing="0" class="width">
+        <tbody>
+            <tr>
+                <td align="right">
+                    <table width="340" align="center" border="0" cellpadding="0" cellspacing="0" class="inner">
+                        <tbody>
+                            <tr>
+                                <td style="font-family: {{font-stack}}; font-size: 18px; color: {{text-colour}}; text-align:left;line-height: 20px;" >
+                                    ...
+                                </td>
+                            </tr>
+                            _include('./spacing.html', { "amount": "10" })
+                            <tr>
+                                <td style="font-family: {{font-stack}}; font-size: 14px; color: {{text-colour}}; text-align:left;line-height: 24px;">
+                                    ...
+                                </td>
+                            </tr>
+                            _include('./spacing.html', { "amount": "10" })
+                            <tr>
+                                <td>
+                                    _include('./button.html', {
+                                        "text": "Peace!",
+                                        "url": "http://www.example.com/",
+                                        "align": "left"
+                                    })
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <!-- /right column -->
+</td>
+</tr>
+</tbody>
+</table>
+</td>
+</tr>
+_include('./spacing.html', { "amount": "20" })
+</tbody>
+</table>
+
+</td>
+</tr>
+</tbody>
+</table>
+<!-- /2-thirds-right -->

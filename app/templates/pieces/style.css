@@ -1,0 +1,83 @@
+/* Client-specific Styles */
+#outlook a {padding:0;} /* Force Outlook to provide a "view in browser" menu link. */
+body{width:100% !important; -webkit-text-size-adjust:100%; -ms-text-size-adjust:100%; margin:0; padding:0;}
+/* Prevent Webkit and Windows Mobile platforms from changing default font sizes, while not breaking desktop design. */
+.ExternalClass {width:100%;} /* Force Hotmail to display emails at full width */
+.ExternalClass, .ExternalClass p, .ExternalClass span, .ExternalClass font, .ExternalClass td, .ExternalClass div {line-height: 100%;} /* Force Hotmail to display normal line spacing.  More on that: http://www.emailonacid.com/forum/viewthread/43/ */
+#backgroundTable {margin:0; padding:0; width:100% !important; line-height: 100% !important;}
+.backgroundTable {margin:0; padding:0; width:100% !important; line-height: 100% !important;}
+img {outline:none; text-decoration:none;border:none; -ms-interpolation-mode: bicubic;}
+a img {border:none;}
+.image_fix {display:block;}
+p { margin: 0px 0px !important; }
+
+table td { border-collapse: collapse; }
+table { border-collapse:collapse; mso-table-lspace:0pt; mso-table-rspace:0pt; }
+a { color: {{brand-colour}}; text-decoration: none; text-decoration: none !important; }
+
+img[class="img-600"] { height: auto !important; max-width: 600px !important; width: 100% !important;}
+img[class="img-270"] { height: auto !important; max-width: 270px !important; width: 100% !important}
+img[class="img-200"] { height: auto !important; max-width: 200px !important; width: 100% !important}
+img[class="img-180"] { height: auto !important; max-width: 180px !important; width: 100% !important}
+
+td.button:hover { background-color: {{brand-colour}} !important; }
+
+td[class="nav-stack"] {
+    padding: 10px 0 10px 0 !important;
+}
+td[class="nav-stack"]:hover { background-color: #ff6500 !important; }
+
+/* ------------- */
+/* Medium Styles */
+
+@-ms-viewport{width:device-width}
+@media only screen and (max-width: 640px) {
+    a[href^="tel"], a[href^="sms"] {
+        text-decoration: none;
+        color: {{text-colour}}; /* or whatever your want */
+        pointer-events: none;
+        cursor: default;
+    }
+    .mobile_link a[href^="tel"], .mobile_link a[href^="sms"] {
+        text-decoration: default;
+        color: {{text-colour}} !important;
+        pointer-events: auto;
+        cursor: default;
+    }
+    table[class=width]  { width: 440px !important; text-align: center !important;}
+    table[class=inner]  { width: 420px !important; text-align: center !important;}
+    table[class=inmost] { width: 400px !important; text-align: center !important;}
+
+    td[class="nav-stack"] {
+        display: block;
+        padding: 10px 0 10px 0!important;
+    }
+
+    td[class="small-center"]{ text-align: center !important; }
+    .mobile-block { display: block !important; }
+}
+
+/* ------------- */
+/* Small Styles  */
+
+@-ms-viewport{width:device-width}
+@media only screen and (max-width: 480px) {
+    a[href^="tel"], a[href^="sms"] {
+        text-decoration: none;
+        color: {{text-colour}}; /* or whatever your want */
+        pointer-events: none;
+        cursor: default;
+    }
+    .mobile_link a[href^="tel"], .mobile_link a[href^="sms"] {
+        text-decoration: default;
+        color: {{text-colour}} !important; 
+        pointer-events: auto;
+        cursor: default;
+    }
+    table[class=width]  { width: 280px !important; text-align: center !important;}
+    table[class=inner]  { width: 260px !important; text-align: center !important;}
+    table[class=inmost] { width: 240px !important; text-align: center !important;}
+
+    img[class="img-600"] { height: auto !important; max-width: 280px !important; width: 100% !important;}
+    img[class="img-270"] { height: auto !important; max-width: 260px !important; width: 100% !important}
+}

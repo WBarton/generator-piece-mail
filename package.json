@@ -1,0 +1,40 @@
+{
+  "name": "generator-piece-mail",
+  "version": "1.2.2",
+  "description": "Yeoman responsive email template generator",
+  "license": "MIT",
+  "main": "app/index.js",
+  "repository": "bitbucket:wbarton/generator-piece-mail",
+  "author": {
+    "name": "Will Barton",
+    "email": "hello@wbarton.co.uk",
+    "url": "http://www.wbarton.co.uk/"
+  },
+  "engines": {
+    "node": ">=0.10.0"
+  },
+  "files": [
+    "app"
+  ],
+  "keywords": [
+    "yeoman-generator",
+    "email",
+    "camapign",
+    "newsletter",
+    "builder"
+  ],
+  "scripts": {
+    "test": "mocha"
+  },
+  "devDependencies": {
+    "mocha": "*"
+  },
+  "dependencies": {
+    "lodash": "^3.6.0",
+    "util": "^0.10.3",
+    "path": "^0.11.14",
+    "underscore.string": "^3.0.3",
+    "yeoman-generator": "^0.19.0",
+    "yosay": "^1.0.0"
+  }
+}
