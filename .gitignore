@@ -1,0 +1,5 @@
+node_modules
+.DS_Store
+.hg_archival.txt
+.hgignore
+.hgtags
