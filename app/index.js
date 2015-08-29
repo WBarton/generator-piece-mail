@@ -8,9 +8,6 @@ var _s = require('underscore.string');
 
 
 var PieceMailGenerator = yeoman.generators.Base.extend({
-    initializing: function () {
-        this.pkg = require('../package.json');
-    },
 
     prompting: {
 
@@ -28,7 +25,7 @@ var PieceMailGenerator = yeoman.generators.Base.extend({
                     // Name the Poject, TODO: decide if to slugify project name.
                     type    : 'input',
                     name    : 'appname',
-                    message : 'Your camapign name',
+                    message : 'Your campaign name',
                     validate: function (value) {
                         // Trim input value and check if it's not empty
                         if (!value.replace(/^\s+/g, '').replace(/\s+$/g, '')) {

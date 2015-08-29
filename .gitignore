@@ -3,3 +3,4 @@ node_modules
 .hg_archival.txt
 .hgignore
 .hgtags
+.hgflow
