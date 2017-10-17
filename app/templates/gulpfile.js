@@ -37,11 +37,6 @@ var litmusOptions = {
     password: process.env.LITMUS_PASSWORD,
     url: 'https://'+ process.env.LITMUS_COMPANY +'.litmus.com',
     applications: [
-        'ol2000',
-        'ol2002',
-        'ol2003',
-        'ol2007',
-        'ol2010',
         'ol2011',
         'ol2013',
         'outlookcom',
@@ -53,14 +48,11 @@ var litmusOptions = {
         'gmailnew',
         'ffgmailnew',
         'chromegmailnew',
-        'windowsphone8',
-        'android22',
-        'android4',
         'androidgmailapp',
         'iphone5s',
         'iphone6',
         'iphone6plus',
-        'ipadmini',
+        'iphone7',
         'ipad'
     ]
 };
