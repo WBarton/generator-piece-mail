@@ -1,3 +1,4 @@
+require('dotenv').config();
 var gulp = require('gulp');
 var replace = require('gulp-replace');
 var fileinclude = require('gulp-file-include');
@@ -15,18 +16,10 @@ var path = require('path');
 var litmus = require('gulp-litmus');
 <% } %>
 
-// Pinched from: https://github.com/shama/userhome/blob/master/index.js
-function userHome() {
-    return path.resolve.apply(path.resolve, [
-            process.env[(process.platform === 'win32') ? 'USERPROFILE' : 'HOME']
-    ].concat(Array.prototype.slice.call(arguments, 0)));
-}
-
-var conf = require(userHome() + '/.piecemail.json');
 
 var knownOptions = {
     string: 'eml',
-    default: { eml: process.env.NODE_ENV || conf.gmail.email }
+    default: { eml: process.env.NODE_ENV || process.env.GMAIL_EMAIL }
 };
 
 var options = minimist(process.argv.slice(2), knownOptions);
@@ -40,9 +33,9 @@ var brandColour = '#ff6500';
 
 <% if (useLitmus) { %>
 var litmusOptions = {
-    username: conf.litmus.username,
-    password: conf.litmus.password,
-    url: 'https://'+ conf.litmus.company +'.litmus.com',
+    username: process.env.LITMUS_USERNAME,
+    password: process.env.LITMUS_PASSWORD,
+    url: 'https://'+ process.env.LITMUS_COMPANY +'.litmus.com',
     applications: [
         'ol2000',
         'ol2002',
@@ -76,7 +69,7 @@ var litmusOptions = {
 gulp.task('send', function () {
     var htmlEmail = fs.readFileSync('./dist/built/index.html', { encoding: 'utf8' });
     var mailOptions = {
-        from: 'Piece Mail <' + conf.gmail.email + '>',
+        from: 'Piece Mail <' + process.env.GMAIL_EMAIL + '>',
         to: options.eml,
         subject: '<%= appname %>',
         html: htmlEmail
@@ -84,8 +77,8 @@ gulp.task('send', function () {
     transporter = nodemailer.createTransport({
         service: 'Gmail',
         auth: {
-            user: conf.gmail.email,
-            pass: conf.gmail.pass
+            user: process.env.GMAIL_EMAIL,
+            pass: process.env.GMAIL_PASSWORD
         }
     });
     transporter.sendMail(mailOptions, function(error, info) {
