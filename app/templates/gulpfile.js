@@ -61,7 +61,11 @@ var litmusOptions = {
 gulp.task('send', function () {
     var htmlEmail = fs.readFileSync('./dist/built/index.html', { encoding: 'utf8' });
     var mailOptions = {
+<<<<<<< HEAD
         from: '"Piece Mail" <' + process.env.GMAIL_EMAIL + '>',
+=======
+        from: 'Piece Mail <' + process.env.GMAIL_EMAIL + '>',
+>>>>>>> a8695eebebe659cd4e72b90dbd8931c82a12aa97
         to: options.eml,
         subject: '<%= appname %>',
         html: htmlEmail
