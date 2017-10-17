@@ -61,7 +61,7 @@ var litmusOptions = {
 gulp.task('send', function () {
     var htmlEmail = fs.readFileSync('./dist/built/index.html', { encoding: 'utf8' });
     var mailOptions = {
-        from: 'Piece Mail <' + process.env.GMAIL_EMAIL + '>',
+        from: '"Piece Mail" <' + process.env.GMAIL_EMAIL + '>',
         to: options.eml,
         subject: '<%= appname %>',
         html: htmlEmail
@@ -75,7 +75,6 @@ gulp.task('send', function () {
     });
     transporter.sendMail(mailOptions, function(error, info) {
         "use strict";
-
         if ( error ) {
             console.log(error);
         } else {
