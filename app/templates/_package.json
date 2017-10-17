@@ -5,6 +5,7 @@
   "image-url": "<%= imageLocation %>",
   "main": "gulp.js",
   "dependencies": {
+    "dotenv": "^4.0.0",
     "gulp-file-include": "^0.8.0",
     "gulp": "^3.8.11",
     "gulp-htmlhint": "0.0.9",
