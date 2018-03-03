@@ -2,24 +2,22 @@
   "name": "<%= projectSlug %>",
   "version": "0.0.0",
   "description": "<%= appname %> - Your latest Piece Mail campaign.",
-  "image-url": "<%= imageLocation %>",
   "main": "gulp.js",
   "dependencies": {
     "dotenv": "^4.0.0",
-    "gulp-file-include": "^0.8.0",
-    "gulp": "^3.8.11",
-    "gulp-htmlhint": "0.0.9",
+    "gulp": "^3.9.0",
+    "gulp-connect": "^2.2.0",
+    "gulp-file-include": "^0.13.7",
+    "gulp-htmlhint": "^0.3.0",
     "gulp-imagemin": "^2.3.0",
-    "gulp-replace": "0.5.3",
-    "path": "0.11.14",
     <% if (useLitmus) { %>
     "gulp-litmus": "0.0.7",
     <% } %>
-    "gulp-livereload": "^3.8.0",
-    "fs": "0.0.2",
+    "gulp-replace": "^0.5.4",
+    "gulp-token-replace": "^1.0.3",
+    "markdown": "^0.5.0",
     "minimist": "^1.1.1",
     "nodemailer": "^4.2.0",
-    "http": "0.0.0",
-    "st": "^0.5.3"
+    "path": "^0.12.7"
   }
 }
