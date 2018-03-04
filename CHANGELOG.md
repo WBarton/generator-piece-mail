@@ -8,6 +8,7 @@ This project adheres to [Semantic Versioning](http://semver.org/).
 - Dependency on gulp-connect.
 
 ### Changed
+- All variables names used(found in `brand-config.js`).
 - Requirement versions.
 
 ### Removed
