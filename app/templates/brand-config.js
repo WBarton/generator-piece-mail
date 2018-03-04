@@ -5,15 +5,15 @@ module.exports = {
     "local": "./images",
     "prod": "<%= imageLocation %>"
   },
-  "font-stack": "Helvetica, arial, sans-serif",
+  "font-stack": "Helvetica, Arial, sans-serif",
   "font-size-base": "14px",
-  "color-text": "#333333",
+  "color-text": "#001319",
   "color-body": "#ffffff",
-  "color-bg": "#f4f4f2",
-  "color-primary": "#da202a",
-  "color-secondary": "#b0cd57",
-  "color-dark": "#da202a",
-  "color-light": "#b0cd57",
-  "link-browser": "",
-  "link-unsubscribe": ""
+  "color-bg": "#eee8d5",
+  "color-primary": "#dc322e",
+  "color-secondary": "#b58901",
+  "color-dark": "#002834",
+  "color-light": "#eee8d5",
+  "link-browser": "https://view-online",
+  "link-unsubscribe": "https://unsubscribe"
 };
