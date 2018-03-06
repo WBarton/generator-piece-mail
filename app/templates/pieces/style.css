@@ -13,19 +13,19 @@ p { margin: 0px 0px !important; }
 
 table td { border-collapse: collapse; }
 table { border-collapse:collapse; mso-table-lspace:0pt; mso-table-rspace:0pt; }
-a { color: {{brand-colour}}; text-decoration: none; text-decoration: none !important; }
+a { color: {{color-primary}}; text-decoration: none; text-decoration: none !important; }
 
 img[class="img-600"] { height: auto !important; max-width: 600px !important; width: 100% !important;}
 img[class="img-270"] { height: auto !important; max-width: 270px !important; width: 100% !important}
 img[class="img-200"] { height: auto !important; max-width: 200px !important; width: 100% !important}
 img[class="img-180"] { height: auto !important; max-width: 180px !important; width: 100% !important}
 
-td.button:hover { background-color: {{brand-colour}} !important; }
+td.button:hover { background-color: {{color-primary}} !important; }
 
 td[class="nav-stack"] {
-    padding: 10px 0 10px 0 !important;
+    padding: 10px 0 10px 0 !important;  
 }
-td[class="nav-stack"]:hover { background-color: #ff6500 !important; }
+td[class="nav-stack"]:hover { background-color: {{color-secondary}} !important; }
 
 /* ------------- */
 /* Medium Styles */
@@ -34,13 +34,13 @@ td[class="nav-stack"]:hover { background-color: #ff6500 !important; }
 @media only screen and (max-width: 640px) {
     a[href^="tel"], a[href^="sms"] {
         text-decoration: none;
-        color: {{text-colour}}; /* or whatever your want */
+        color: {{color-text}}; /* or whatever your want */
         pointer-events: none;
         cursor: default;
     }
     .mobile_link a[href^="tel"], .mobile_link a[href^="sms"] {
         text-decoration: default;
-        color: {{text-colour}} !important;
+        color: {{color-text}} !important;
         pointer-events: auto;
         cursor: default;
     }
@@ -64,13 +64,13 @@ td[class="nav-stack"]:hover { background-color: #ff6500 !important; }
 @media only screen and (max-width: 480px) {
     a[href^="tel"], a[href^="sms"] {
         text-decoration: none;
-        color: {{text-colour}}; /* or whatever your want */
+        color: {{color-text}}; /* or whatever your want */
         pointer-events: none;
         cursor: default;
     }
     .mobile_link a[href^="tel"], .mobile_link a[href^="sms"] {
         text-decoration: default;
-        color: {{text-colour}} !important; 
+        color: {{color-text}} !important; 
         pointer-events: auto;
         cursor: default;
     }

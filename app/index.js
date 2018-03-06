@@ -165,6 +165,7 @@ var PieceMailGenerator = yeoman.generators.Base.extend({
 
             this.template('_package.json', this.projectSlug + '/package.json');
             this.template('gulpfile.js', this.projectSlug + '/gulpfile.js');
+            this.template('brand-config.js', this.projectSlug + '/brand-config.js');
             this.template('index.html', this.projectSlug + '/src/index.html');
 
             var piecesDir = (this.readyTemplates) ? this.sourceRoot(this.destinationRoot()) + '/pieces/' : 'pieces/';

@@ -21,10 +21,10 @@
     "email"
   ],
   "scripts": {
-      "test": "mocha"
+    "test": "mocha"
   },
   "devDependencies": {
-      "mocha": "*"
+    "mocha": "*"
   },
   "dependencies": {
     "util": "^0.10.3",

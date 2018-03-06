@@ -14,11 +14,9 @@
 _include('./pieces/pre-header.html')
 
 _include('./pieces/header.html')
-
 <% rows.forEach(function(r,i) { %>
-    _include('./pieces/r<%= i + 1 %>-<%= r %>.html')
+_include('./pieces/r<%= i + 1 %>-<%= r %>.html')
 <% }); %>
-
 _include('./pieces/footer.html')
 
 _include('./pieces/post-footer.html')
